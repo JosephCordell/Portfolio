@@ -1,0 +1,249 @@
+
+
+:root {
+    --color1: rgb(38, 70, 83);
+    --color2:rgb(42, 157, 143);
+    --color3: rgb(244, 162, 97);
+    --color4: rgb(244, 162, 97);
+    --color5: rgb(231, 111, 81);
+}
+
+header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: var(--color3);
+    padding: 30px;
+
+}
+
+header h1 a{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 75px;
+    color: var(--color2);
+    width: auto;
+}
+
+header nav a{
+    flex-wrap: wrap;
+    color: white;
+    font-size: 25px;
+}
+
+header nav ul{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+header nav ul li{
+    margin: 10px;
+}
+
+header nav ul li a {
+    border-bottom: 4px solid var(--color3);
+    font-style: underline;
+
+}
+
+header nav ul li a:hover{
+    background: black;
+}
+
+#banner {
+    display:flex;
+    background-image: url(../images/banner2.jpg);
+    height: 200px;
+    width: 100%;
+    font-size: 50px;
+    color: var(--color1);
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+#banner p {
+    background-color: var(--color2);
+}
+
+.containerTitle {
+    text-align: right;
+    font-size: 30px;
+    font-weight: bold;
+    width: 15%;
+    border-right: 4px solid white;
+    margin: 20px;
+    display: flex;
+
+}
+
+.containerContent{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    margin: 10px;
+}
+
+
+#aboutMe, #projects {
+    display: flex;
+    margin-right: 10%;
+    margin-left: 5%;
+}
+
+ #contactMe {
+     display: flex;
+     padding-right: 10%;
+     padding-left: 10%;
+ }
+
+#aboutMe p {
+    font-size: 23px;
+    padding: 10px;
+    margin: 5px;
+    background-color: var(--color5);
+}
+
+#projects {
+    display:flex;
+}
+
+main {
+    min-width: none;
+    padding: 200px 0px;
+
+background-color: var(--color2);
+}
+
+
+
+.myFace {
+    border-radius: 50%;
+    max-height: 150px;
+}
+
+.projectImage {
+    display: flex;
+    border: var(--color1);
+    max-width: 300px;
+    max-height: 500px;
+    width: auto;
+    height: auto;
+}
+
+.projectImage:hover{
+    opacity: .25;
+
+}
+.projectImage:hover .projectTitle {
+    opacity: 1.0;
+}
+
+.projectTitle{
+    opacity: 0;
+    position:absolute;
+    color: var(--color3);
+    font-size: 50px;
+}
+
+.projectImages {
+    height: 100%;
+    width: 100%;
+}
+
+.contactMeInformation {
+    display: flex;
+    justify-content: space-between;
+    font-size: 25px;
+    width: 100%;
+    align-items: center;
+    font-weight:bold;
+    color: orange;
+    text-decoration: underline;
+}
+
+footer {
+    
+    background-color: var(--color3);
+}
+
+.big-icon {
+    font-size: 100px;
+}
+
+.projectCard {
+    background-color: #eee;
+    box-shadow: 0 3px 15px rgba(100, 100, 100, 0.5);
+    border-radius: 20px;
+    margin: 10px;
+    padding: 20px;
+    text-align: center;
+    height: auto;
+}
+
+ /* *{border: 1px solid red;}  */
+
+@Media screen and (max-width:1400px) {
+    main {
+        display: flex;
+        flex-direction: column;
+        padding: 100px 0px;
+    }
+}
+
+@Media screen and (max-width:992px) {
+header {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+
+header h1 a {
+    font-size: 68px;
+    display: flex;
+    align-content: center;
+}
+main {
+    display: flex;
+    flex-direction: column;
+    padding: 0px;
+}
+
+.containerTitle{
+    width: 95%;
+    justify-content: center;
+    border-right: 0;
+    border-bottom: 4px solid white;
+}
+
+#aboutMe, #projects, #contactMe{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    margin-right: 10%;
+    margin-left: 5%;
+}
+
+/* .contactMeInformation {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    padding: 10px;
+
+}
+ */
+.containerContent {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+nav ul{
+    display: block;
+    flex-direction: column;
+    align-content: center;
+    padding: 10px;
+    text-align: center;
+}
+
+}
+
