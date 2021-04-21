@@ -8,5 +8,5 @@ Repository URL: [https://github.com/JosephCordell/Portfolio](https://github.com/
 Website URL: [https://josephcordell.github.io/Portfolio/](https://josephcordell.github.io/Portfolio/)
 
 ## Screenshot
-The below image shows the first version of my portfolio
-![Screenshot of website v.1 of portfolio](./assets/images/portfolio.png)
+
+![Screenshot of website v.1 of portfolio](./assets/images/Portfolio.png)
