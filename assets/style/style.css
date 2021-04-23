@@ -63,6 +63,8 @@ header nav ul li a:hover{
 
 #banner p {
     background-color: var(--color2);
+        color: var(--color4);
+        padding: 10px;
 }
 
 .containerTitle {
@@ -102,6 +104,7 @@ header nav ul li a:hover{
     padding: 10px;
     margin: 5px;
     background-color: var(--color5);
+
 }
 
 #projects {
